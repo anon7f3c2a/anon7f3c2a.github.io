@@ -131,7 +131,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR_REPO_HERE" target="_blank" rel="noopener"
+                    <a href="https://anonymous.4open.science/r/Anonymous-code-4E7E" target="_blank" rel="noopener"
                        class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -348,7 +348,7 @@
                             style="width: 100%; height: auto; display: block;"
                             poster="static/images/demo1_poster.jpg"
                           >
-                            <source src="static/videos/02197.mp4" type="video/mp4">
+                            <source src="static/videos/02009.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                           </video>
                         </div>
@@ -370,23 +370,22 @@
                               <span class="tag is-dark is-light">Qwen3-Omni-thinking</span>
                             </p>
                             <p style="margin-top: -0.25rem;">
-                              &lt;think&gt;\nGot it, let's check the video. The question is whether the talking man is visible. Looking at the frames, there's a character named \"Chosen Warrior\" and others like \"Geshute Chieftan\". Wait, the video shows characters with health bars, and in the frames, there's a character that might be talking. Wait, the audio might have a talking man, but the visual—do we see a man talking? Let's check each frame. The first frame has \"Chosen Warrior\", then the next frames show Geshute Chieftan. But the question is about \"the talking man\"—is there a man visible who is talking? Wait, maybe the video has a character that's speaking, but visually, do we see a man? Wait, the options are yes or no. Let's think: in the video, there are characters with health bars, so they are visible. But does the \"talking man\" refer to a specific character? Wait, maybe the video shows a character that's talking (even if it's a game character), but the question is whether he's visible. Since the video is from a game (like Fallout), the characters are visible. Wait, the question says \"the talking man\"—maybe in the video, there's a man who is talking, so is he visible? Let's check the frames. In the video, the characters are visible with their health bars, so yes, there is a talking man (as part of the game's UI or character). Wait, no, maybe the \"talking man\" is a specific reference.<span class="hl-red">Wait, the video shows characters, so the answer is yes. Because in the video, there are visible characters, so the talking man (if he's one of them) is visible. So the answer is 'yes'.</span>\n&lt;/think&gt;
-                              &lt;answer&gt;<span class="hl-red">yes</span>&lt;/answer&gt;
+                              &lt;think&gt;\nGot it, let's check. The video shows a dark, industrial setting with a countdown. The audio has a voice counting from 0 to 9. The visual part includes text saying \"The factory isn't safe...\", which matches the context of the factory being unsafe. The countdown audio and the visual of the factory environment—so the audio (counting) and visual (factory, warning text) are related. <span class="hl-red">Wait, the question is if the contexts match. Let's see: the audio is a countdown, the visual is a factory with a warning. The countdown might be part of the factory scenario, so they do match. So the answer is 'yes'.</span>\n&lt;/think&gt;
+                              &lt;answer&gt;<span class="hl-red">yes</span>&lt;/answer&gt;\"
                             </p>
                           </div>
 
                           <div class="box" style="border-radius: 14px; border: 1px solid rgba(72,199,142,0.35);">
                             <p class="mb-2">
                               <span class="tag is-success is-light">Ours (SFFL)</span>
+                              &lt;mod&gt;Audio-Visual&lt;/mod&gt;&lt;v&gt;The video shows a dark, grainy, and distorted view of what appears to be an industrial setting, possibly a factory. The scene is mostly static with some slow movement, and the overall atmosphere is eerie and unsettling. Towards the end of the video, text appears on the screen that reads, \"The factory isn't safe...\"&lt;/v&gt;
+                              &lt;a&gt;The audio contains a person counting from zero to nine, followed by a series of beeps.&lt;/a&gt;
+                              &lt;sum&gt;The visual content depicts a dark, industrial setting with a warning message about the factory not being safe. The audio consists of a person counting and beeps, which does not directly relate to the visual content. <span class="hl-green">The contexts of the audio and visual content do not match.</span>&lt;/sum&gt;
+                              &lt;answer&gt;<span class="hl-green">no</span>&lt;/answer&gt;
                             </p>
                             <p style="margin-top: -0.25rem;">
-
-                              &lt;modality&gt;Audio-Visual&lt;/modality&gt;
-                              &lt;v&gt;The video shows a first-person perspective of a video game. The player character is visible from behind, 
-                              holding a weapon. Other characters are present in the scene, but they are not shown talking. There is no visible man who is talking.&lt;/v&gt;
-                              &lt;a&gt;The audio contains the sound of rushing water and a person speaking briefly.&lt;/a&gt;
-                              &lt;sum&gt;The required modality is Audio-Visual. <span class="hl-green">The visual modality shows the game scene, where no man is seen talking.</span> 
-                              The audio contains speech, but the speaker is not visible.  &lt;/sum&gt;&lt;answer&gt;<span class="hl-green">no</span>&lt;/answer&gt;
+                              
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -517,7 +516,7 @@
                               <span class="tag is-success is-light">Ours (SFFL)</span>
                             </p>
                             <p style="margin-top: -0.25rem;">
-                              &lt;modality&gt;Visual&lt;/modality&gt;
+                              &lt;mod&gt;Visual&lt;/mod&gt;
                               &lt;v&gt;The video shows a street scene with multiple fire trucks moving through traffic. There are pedestrians visible on the sidewalks, and one man in a dark jacket is seen walking on the sidewalk. However, there is no indication that this man is talking, and no close-up or clear view of him speaking is provided.&lt;/v&gt;
                               &lt;a&gt;The audio contains the sound of a man speaking.&lt;/a&gt;
                               &lt;sum&gt;The visual modality is necessary to answer the question. The audio confirms a man is talking, but the visual information is required to determine if he is visible in the video. <span class="hl-green">The man in the dark jacket is visible, but there is no evidence he is the one talking.</span> &lt;/sum&gt;
