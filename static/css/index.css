@@ -38,6 +38,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hl-red {
+    background: rgba(255, 56, 96, 0.18);   /* Bulma-ish danger tint */
+    color: #b00020;
+    padding: 0.08em 0.25em;
+    border-radius: 0.4em;
+    font-weight: 600;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .hl-green {
+    background: rgba(72, 199, 142, 0.18);  /* Bulma-ish success tint */
+    color: #0f6d3c;
+    padding: 0.08em 0.25em;
+    border-radius: 0.4em;
+    font-weight: 600;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
 
 /* Modern Button Styles */
 .button {
